@@ -7,63 +7,77 @@ import java.time.LocalDateTime;
  */
 public class Note {
 
-	/*
-	 * This class should have five fields (noteId, noteTitle, noteContent,
-	 * noteStatus and createdAt). This class should also contain the getters and
-	 * setters for the fields. The value of createdAt should not be accepted from
-	 * the user but should be always initialized with the system date
-	 */
+    /*
+     * This class should have five fields (noteId, noteTitle, noteContent,
+     * noteStatus and createdAt). This class should also contain the getters and
+     * setters for the fields. The value of createdAt should not be accepted from
+     * the user but should be always initialized with the system date
+     */
+    private int noteID;
+    private String noteTitle;
+    private String noteContent;
+    private String noteStatus;
+    private LocalDateTime createdAt;
 
-	public Note() {
-	}
 
-	/* All the getters/setters definition should be implemented here */
+    public Note() {
+    }
 
-	public int getNoteId() {
-		return 0;
+    /* All the getters/setters definition should be implemented here */
 
-	}
+    public int getNoteId() {
+        return noteID;
 
-	public void setNoteId(int intid) {
+    }
 
-	}
+    public void setNoteId(int intid) {
+        this.noteID = intid;
+    }
 
-	public String getNoteTitle() {
-		return null;
-	}
+    public String getNoteTitle() {
+        return noteTitle;
+    }
 
-	public void setNoteTitle(String string) {
+    public void setNoteTitle(String string) {
+        this.noteTitle = string;
+    }
 
-	}
+    public String getNoteContent() {
+        return noteContent;
+    }
 
-	public String getNoteContent() {
-		return null;
-	}
+    public void setNoteContent(String string) {
+        this.noteContent = string;
 
-	public void setNoteContent(String string) {
+    }
 
-	}
+    public String getNoteStatus() {
+        return noteStatus;
+    }
 
-	public String getNoteStatus() {
-		return null;
-	}
+    public void setNoteStatus(String string) {
+        this.noteStatus=string;
 
-	public void setNoteStatus(String string) {
+    }
 
-	}
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
 
-	public LocalDateTime getCreatedAt() {
-		return null;
-	}
+    public void setCreatedAt(LocalDateTime localdatetime) {
+        this.createdAt=localdatetime;
+    }
 
-	public void setCreatedAt(LocalDateTime localdatetime) {
+    /* Override the toString() method */
 
-	}
-
-	/* Override the toString() method */
-
-	@Override
-	public String toString() {
-		return null;
-	}
+    @Override
+    public String toString() {
+        return "Note{" +
+                "noteID=" + noteID +
+                ", noteTitle='" + noteTitle + '\'' +
+                ", noteContent='" + noteContent + '\'' +
+                ", noteStatus='" + noteStatus + '\'' +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }

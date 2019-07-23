@@ -13,7 +13,7 @@ public class Note {
      * setters for the fields. The value of createdAt should not be accepted from
      * the user but should be always initialized with the system date
      */
-    private int noteID;
+    private int noteId;
     private String noteTitle;
     private String noteContent;
     private String noteStatus;
@@ -26,12 +26,12 @@ public class Note {
     /* All the getters/setters definition should be implemented here */
 
     public int getNoteId() {
-        return noteID;
+        return noteId;
 
     }
 
     public void setNoteId(int intid) {
-        this.noteID = intid;
+        this.noteId = intid;
     }
 
     public String getNoteTitle() {
@@ -73,7 +73,7 @@ public class Note {
     @Override
     public String toString() {
         return "Note{" +
-                "noteID=" + noteID +
+                "noteId=" + noteId +
                 ", noteTitle='" + noteTitle + '\'' +
                 ", noteContent='" + noteContent + '\'' +
                 ", noteStatus='" + noteStatus + '\'' +

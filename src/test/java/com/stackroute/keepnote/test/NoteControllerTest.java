@@ -7,6 +7,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+
+import com.stackroute.keepnote.config.AppInitializer;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +24,7 @@ import com.stackroute.keepnote.controller.NoteController;
 import com.stackroute.keepnote.repository.NoteRepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("/beans.xml")
+@ContextConfiguration(classes = AppInitializer.class)
 public class NoteControllerTest {
 	
 	private MockMvc mockMvc;
